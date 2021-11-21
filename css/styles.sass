@@ -1,0 +1,60 @@
+@mixin navbar-font
+  font-family : 'Poppins', sans-serif
+  font-style: normal
+  font-weight: normal
+  font-size : 18px
+  line-height : 133%
+  letter-spacing: 0.08em
+  color : #FFFFFF
+  &:hover
+    color : #ffffff
+
+@mixin ellipse
+  width: 28.06px
+  height: 28.06px
+  border-radius: 100%
+  background-color: #FFFFFF
+  text-align: center
+  padding: 0
+  margin: auto 7.775px
+
+body
+  max-width : 1440px
+  margin : 0 auto
+
+
+.navbar, .menu
+  background-color: #000000
+  padding : 0
+.menuSection
+  margin-top: 53px
+
+.TogMenu
+  border-style: none
+
+.navbar-brand
+  margin : 29px 60px 50px
+  padding : 0
+
+.navbar-collapse
+  position: absolute
+  top: 53px
+  left: 316px
+
+.nav-link
+  @include navbar-font
+
+.linkIcon
+  @include ellipse
+
+.linkedin
+  width: 13.72px
+  height: 13.72px
+
+// .logoIcon
+//   margin-left: 170.225px
+//   margin-right: 23.005px
+
+.discordBtn
+  background-image: url("Images\image 316.svg")
+  background-size: cover
